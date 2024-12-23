@@ -1,3 +1,4 @@
+import "./App.css"
 import { useEffect } from 'react';
 import IndexRouter from './router/indexRouter';
 import axios from 'axios';
@@ -9,9 +10,7 @@ function App() {
     },[])
   })
   return (
-    <div>
-      <IndexRouter></IndexRouter>
-    </div>
+    <IndexRouter></IndexRouter>
   );
 }
 

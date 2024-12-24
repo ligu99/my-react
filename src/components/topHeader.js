@@ -1,15 +1,15 @@
 import React,{ useState } from "react";
 
 import {
-    MenuFoldOutlined,
-    MenuUnfoldOutlined
-  } from '@ant-design/icons';
-import { Button, Layout, Menu, theme } from 'antd';
+  MenuFoldOutlined,
+  MenuUnfoldOutlined
+} from '@ant-design/icons';
+import { Button, Layout } from 'antd';
 
 const { Header } = Layout;
 export default function TopHeader(props){
     const handleSetCollapsed = () => {
-      props.setCollapsed();
+      props.setCollapsedIndex();
     };
     return (
         <Header style={{background: "#fff"}}>
@@ -19,7 +19,7 @@ export default function TopHeader(props){
             onClick={() => handleSetCollapsed()}
             style={{
               fontSize: '16px',
-              width: 64,
+              width: 16,
               height: 64,
             }}
           />

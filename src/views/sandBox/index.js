@@ -11,15 +11,13 @@ import NotFound from "../404"
 export default function SandBox(){
     const [collapsed, setCollapsed] = useState(false);
     const setCollapsedIndex=()=>{
-        console.log(1);
-        
         setCollapsed(!collapsed)
     }
     return (
         <Layout>
             <SideMenu collapsed={collapsed}></SideMenu>
             <Layout>
-                <TopHeader collapsed={collapsed} setCollapsed={setCollapsedIndex}></TopHeader>
+                <TopHeader collapsed={collapsed} setCollapsedIndex={setCollapsedIndex}></TopHeader>
                 <Content
                     style={{
                         margin: '24px 16px',

@@ -10,8 +10,7 @@ export default function Home(){
         })
     }
     useEffect(()=>{
-        console.log("useEffect was called"); // 记录 useEffect 被调用的信息
-        console.log(new Date().toLocaleTimeString()); // 记录当前的时间戳（以本地时间格式）.
+        
     },[])
 
     return (

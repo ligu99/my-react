@@ -10,3 +10,11 @@ html,body{
 .ant-layout-header{
   padding: 0 24px;
 }
+button{
+  padding: 8px 10px;
+  color: #fff;
+  background: #1677ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
